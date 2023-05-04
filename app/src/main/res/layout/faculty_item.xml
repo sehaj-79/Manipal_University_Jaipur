@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DAD8D8">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/faculty_item_image"
+        android:layout_alignTop="@+id/Faculty_item_designtion"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/boy" />
+
+    <EditText
+        android:layout_toStartOf="@+id/faculty_item_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/faculty_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/centurygothicbold"
+        android:text="Name of Faculty"
+        android:background="@android:color/transparent"
+        android:textColor="#212121"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/faculty_item_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/faculty_item_image" />
+
+    <EditText
+        android:layout_toStartOf="@+id/faculty_item_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/faculty_item_name"
+        android:id="@+id/Faculty_item_designtion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" android:fontFamily="@font/centurygothic"
+        android:text="Designation"
+        android:background="@android:color/transparent"
+        android:textSize="14sp"
+        android:textColor="#212121"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/faculty_item_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/faculty_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/faculty_item_name" />
+
+    <EditText
+        android:layout_below="@+id/Faculty_item_designtion"
+        android:id="@+id/Faculty_item_department"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@+id/faculty_item_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/centurygothic"
+        android:text="Department"
+        android:background="@android:color/transparent"
+        android:textSize="14sp"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toStartOf="@+id/faculty_item_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Faculty_item_designtion"
+        app:layout_constraintTop_toBottomOf="@+id/Faculty_item_designtion" />
+
+    <EditText
+        android:layout_below="@+id/Faculty_item_department"
+        android:id="@+id/Faculty_item_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/faculty_item_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/centurygothic"
+        android:text="School"
+        android:background="@android:color/transparent"
+        android:textSize="14sp"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toStartOf="@+id/faculty_item_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Faculty_item_department"
+        app:layout_constraintTop_toBottomOf="@+id/Faculty_item_department" />
+
+    <EditText
+        android:layout_below="@+id/Faculty_item_school"
+        android:id="@+id/Faculty_item_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/faculty_item_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/centurygothic"
+        android:text="Mail"
+        android:background="@android:color/transparent"
+        android:textSize="14sp"
+        android:layout_marginStart="16dp"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/faculty_item_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Faculty_item_school"
+        app:layout_constraintTop_toBottomOf="@+id/Faculty_item_school" />
+
+    <EditText
+        android:textStyle="italic"
+        android:id="@+id/Faculty_item_contact"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/faculty_item_image"
+        android:layout_alignStart="@+id/faculty_item_image"
+        android:layout_alignEnd="@+id/faculty_item_image"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-1dp"
+        android:fontFamily="@font/centurygothic"
+        android:text="Contact"
+        android:background="@android:color/transparent"
+        android:textSize="14sp"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toEndOf="@+id/faculty_item_image"
+        app:layout_constraintTop_toTopOf="@+id/Faculty_item_mail" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/shield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/Faculty_item_mail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"/>
+
+    <Button
+        android:id="@+id/edit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Faculty_item_contact"
+        android:layout_alignEnd="@+id/Faculty_item_contact"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pdf_button"
+        android:text="Edit Data"
+        android:textColor="#212121" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/save_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Faculty_item_contact"
+        android:layout_alignEnd="@+id/Faculty_item_contact"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pdf_button"
+        android:text="Save Data"
+        android:textColor="#212121" />
+</RelativeLayout>

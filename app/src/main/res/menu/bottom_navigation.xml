@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/vector_home"
+        android:title=" "
+        />
+
+    <item
+        android:id="@+id/nav_board"
+        android:icon="@drawable/vector_board"
+        android:title=" "/>
+
+    <item
+        android:id="@+id/nav_chats"
+        android:icon="@drawable/vector_chat"
+        android:title=" "/>
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/vector_about"
+        android:title=" "/>
+
+</menu>

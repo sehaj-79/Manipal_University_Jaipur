@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FunctionalListActivity"
+    android:background="#DAD8D8">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/functionallist_back"
+                android:src="@drawable/vector_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/functionallist_department"
+                android:fontFamily="@font/centurygothic"
+                android:text="Manipal"
+                android:textSize="20sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:visibility="gone"
+        android:layout_below="@+id/appbar"
+        android:padding="7dp"
+        android:paddingStart="9dp"
+        android:background="@drawable/search_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Search..."
+        android:textColorHint="#979797"
+        android:textColor="#979797"
+        android:id="@+id/search_functional"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/functional_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_functional"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

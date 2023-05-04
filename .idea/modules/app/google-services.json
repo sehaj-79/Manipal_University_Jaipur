@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "602799622864",
+    "firebase_url": "https://manipal-university-jaipu-4dd02-default-rtdb.firebaseio.com",
+    "project_id": "manipal-university-jaipu-4dd02",
+    "storage_bucket": "manipal-university-jaipu-4dd02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602799622864:android:d9a9a9d20c729dce70ecd5",
+        "android_client_info": {
+          "package_name": "com.aliferous.mujapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602799622864-omlfabhdql0iitpj3466if2ch1eepn07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aliferous.mujapp",
+            "certificate_hash": "b542f05ddad563b0009d3c6597a16acdb7d8635d"
+          }
+        },
+        {
+          "client_id": "602799622864-3jg8p3h2547u2fv9q22n3nalplvpdhgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBds5of2BSRUSkVRQC37IDxKZoQAYRA754"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602799622864-3jg8p3h2547u2fv9q22n3nalplvpdhgk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

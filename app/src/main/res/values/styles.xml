@@ -1,0 +1,73 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <string-array name="Sort_by">
+        <item>All Schools</item>
+        <item>School of Computing &amp; Information Technology Engineering</item>
+        <item>School of Electrical, Electronics &amp; Communication Engineering</item>
+        <item>School of Automobile &amp; Mechanical Engineering</item>
+        <item>School of Civil &amp; Chemical Engineering</item>
+    </string-array>
+
+    <string-array name="Sort_byCSIT">
+        <item>All</item>
+        <item>Department of Computer Science Engineering</item>
+        <item>Department of Information Technology Engineering</item>
+        <item>Department of Computer &amp; Communication Engineering</item>
+    </string-array>
+
+    <string-array name="Sort_byEEC">
+        <item>All</item>
+        <item>Department of Electrical Engineering</item>
+        <item>Department of Electronics &amp; Communication Engineering</item>
+    </string-array>
+
+    <string-array name="Sort_byAM">
+        <item>All</item>
+        <item>Department of Automobile Engineering</item>
+        <item>Department of Mechanical Engineering</item>
+        <item>Department of Mechatronics Engineering</item>
+    </string-array>
+
+    <string-array name="Sort_byCC">
+        <item>All</item>
+        <item>Department of Civil Engineering</item>
+        <item>Department of Chemical Engineering</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+    </string-array>
+
+    <string-array name="dd_list">
+        <item>Select</item>
+        <item>Faculty</item>
+        <item>Awards</item>
+        <item>Research</item>
+        <item>Placement</item>
+        <item>Programs</item>
+        <item>Functional Units</item>
+        <item>Students</item>
+        <item>Statutory Meeting</item>
+    </string-array>
+
+</resources>
+
+

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyStatsActivity"
+    android:background="#DAD8D8">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:background="#DAD8D8"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <ImageView
+                android:id="@+id/faculty_stats_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/vector_back"
+                android:tint="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/faculty_stats_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/centurygothic"
+                android:text="Faculty Stats Option"
+                android:textColor="#212121"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:id="@+id/faculty_stats_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/pdf_button"
+                android:fontFamily="@font/centurygothic"
+                android:padding="6dp"
+                android:text="Download Pdf"
+                android:textColor="#212121"
+                android:textSize="10sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DAD8D8"
+            tools:context=".FacultyStatsActivity">
+
+
+            <Spinner
+                android:visibility="visible"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/year"
+                style="@style/Material.Widget.Spinner"
+                android:id="@+id/faculty_stats_year_spinner"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"/>
+
+            <Spinner
+                android:id="@+id/faculty_stats_sortby_spinner"
+                style="@style/Material.Widget.Spinner"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/faculty_stats_year_spinner"
+                android:background="@drawable/spinner_bg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/Sort_by"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faculty_stats_year_spinner"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+            <Spinner
+                android:visibility="gone"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/Sort_byCSIT"
+                style="@style/Material.Widget.Spinner"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                android:id="@+id/faculty_stats_sortby_spinner1"
+                app:layout_constraintTop_toBottomOf="@+id/faculty_stats_year_spinner"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/faculty_stats_sortby_spinner"
+                android:layout_below="@+id/faculty_stats_year_spinner"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:visibility="gone"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/Sort_byEEC"
+                style="@style/Material.Widget.Spinner"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:layout_constraintTop_toBottomOf="@+id/faculty_stats_year_spinner"
+                android:id="@+id/faculty_stats_sortby_spinner2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/faculty_stats_sortby_spinner"
+                android:layout_below="@+id/faculty_stats_year_spinner"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:visibility="gone"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/Sort_byAM"
+                style="@style/Material.Widget.Spinner"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:layout_constraintTop_toBottomOf="@+id/faculty_stats_year_spinner"
+                android:id="@+id/faculty_stats_sortby_spinner3"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/faculty_stats_sortby_spinner"
+                android:layout_below="@+id/faculty_stats_year_spinner"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:visibility="gone"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/Sort_byCC"
+                style="@style/Material.Widget.Spinner"
+                app:layout_constraintTop_toBottomOf="@+id/faculty_stats_year_spinner"
+                android:id="@+id/faculty_stats_sortby_spinner4"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/faculty_stats_sortby_spinner"
+                android:layout_below="@+id/faculty_stats_year_spinner"
+                android:layout_marginTop="10dp"/>
+
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/centurygothic"
+                android:text="Number of Professors:"
+                android:textColor="#212121"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/faculty_stats_sortby_spinner" />
+
+            <TextView
+                android:id="@+id/Np"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/centurygothic"
+                android:text="00"
+                android:textColor="#212121"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView7"
+                app:layout_constraintVertical_bias="0.517" />
+
+            <TextView
+                android:id="@+id/Nap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/centurygothic"
+                android:text="00"
+                android:textColor="#212121"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/Nasp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/centurygothic"
+                android:text="00"
+                android:textColor="#212121"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/centurygothic"
+                android:text="Number of Assistant Professors:"
+                android:textColor="#212121"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/centurygothic"
+                android:text="Number of Associate Professor:"
+                android:textColor="#212121"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="about_text_placement" type="id" />
+    <item name="about_text_research" type="id" />
+    <item name="about_text_awards" type="id" />
+    <item name="class_text_teachers" type="id" />
+    <item name="class_text_research" type="id" />
+    <item name="class_text_assign" type="id" />
+    <item name="class_text_attendace" type="id" />
+    <item name="class_text_attendance" type="id" />
+    <item name="about_text_programs" type="id" />
+    <item name="about_text_unit" type="id" />
+    <item name="class_text_requests" type="id" />
+    <item name="access_text_teachers" type="id" />
+    <item name="access_text_accesslist" type="id" />
+    <item name="access_text_requests" type="id" />
+    <item name="access_textView33" type="id" />
+    <item name="about_text_student" type="id" />
+    <item name="about_text_statutory" type="id" />
+</resources>

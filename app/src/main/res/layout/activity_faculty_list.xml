@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FacultyListActivity"
+    android:background="#DAD8D8">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/facultylist_back"
+                android:src="@drawable/vector_back"
+                android:tint="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facultylist_department"
+                android:fontFamily="@font/centurygothic"
+                android:text="Department"
+                android:textSize="20sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_below="@+id/appbar"
+        android:padding="7dp"
+        android:paddingStart="9dp"
+        android:background="@drawable/search_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Search..."
+        android:textColorHint="#212121"
+        android:textColor="#212121"
+        android:id="@+id/search_faculty"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/faculty_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/faculty_sortby"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:background="@drawable/spinner_bg"
+        android:entries="@array/Sort_by"
+        android:layout_margin="12dp"
+        style="@style/Material.Widget.Spinner"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave"
+        android:id="@+id/faculty_sortby_spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/search_faculty"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:visibility="gone"
+        android:background="@drawable/spinner_bg"
+        android:entries="@array/Sort_byCSIT"
+        style="@style/Material.Widget.Spinner"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave"
+        android:id="@+id/faculty_sortby_spinner1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/faculty_sortby_spinner"
+        android:layout_below="@+id/search_faculty"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:visibility="gone"
+        android:background="@drawable/spinner_bg"
+        android:entries="@array/Sort_byEEC"
+        style="@style/Material.Widget.Spinner"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave"
+        android:id="@+id/faculty_sortby_spinner2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/faculty_sortby_spinner"
+        android:layout_below="@+id/search_faculty"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:visibility="gone"
+        android:background="@drawable/spinner_bg"
+        android:entries="@array/Sort_byAM"
+        style="@style/Material.Widget.Spinner"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave"
+        android:id="@+id/faculty_sortby_spinner3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/faculty_sortby_spinner"
+        android:layout_below="@+id/search_faculty"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:visibility="gone"
+        android:background="@drawable/spinner_bg"
+        android:entries="@array/Sort_byCC"
+        style="@style/Material.Widget.Spinner"
+        app:rd_style="@style/Material.Drawable.Ripple.Wave"
+        android:id="@+id/faculty_sortby_spinner4"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/faculty_sortby_spinner"
+        android:layout_below="@+id/search_faculty"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/faculty_sortby"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faculty_sortby_spinner"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#212121"
+        android:textColorHint="#212121" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/faculty_sub_sortby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faculty_sortby_spinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#212121"
+        android:textColorHint="#212121" />
+
+    <Button
+        android:id="@+id/button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_faculty"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:text="Button" />
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/reg_et_username"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/reg_et_email"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="E-mail ID" />
+
+    <EditText
+        android:id="@+id/reg_et_pass"
+        android:layout_width="match_parent"
+        android:layout_marginTop="160dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/reg_et_course"
+        android:layout_width="match_parent"
+        android:layout_marginTop="220dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Course (Student Only)" />
+
+    <EditText
+        android:id="@+id/reg_et_year"
+        android:layout_width="match_parent"
+        android:layout_marginTop="280dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Year (Student Only)" />
+    <EditText
+        android:id="@+id/reg_et_section"
+        android:layout_width="match_parent"
+        android:layout_marginTop="340dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Section (Student Only)" />
+
+
+    <TextView
+        android:id="@+id/reg_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:padding="15dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="400dp"/>
+
+    <CheckBox
+        android:id="@+id/reg_checkBox_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="140dp"/>
+
+    <CheckBox
+        android:id="@+id/reg_checkBox_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="240dp"/>
+
+    <TextView
+        android:id="@+id/reg_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designation"
+        android:padding="15dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="460dp"/>
+
+    <CheckBox
+        android:id="@+id/reg_checkBox_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="140dp"/>
+
+    <CheckBox
+        android:id="@+id/reg_checkBox_faculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="240dp"/>
+
+    <EditText
+        android:id="@+id/reg_et_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:hint="Department (Faculty Only)"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/reg_et_faculty"
+        android:layout_width="match_parent"
+        android:layout_marginTop="580dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Faculty (Faculty Only)" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Submit" />
+
+
+</RelativeLayout>
